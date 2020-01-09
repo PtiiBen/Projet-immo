@@ -29,7 +29,7 @@
                 <a class="nav-link" href="../index.html">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Produits<span
+                <a class="nav-link" href="produits.html">Produits<span
                         class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -164,109 +164,148 @@
     </div>
 </nav>
 
-<section class="container mt-5 mb-5">
-    <div class="row mt-3 justify-content-around">
-        <article class="col-12 col-sm-3 px-sm-0">
-            <div class="card border-0">
-                <img src="../src/img/m3.jpg" class="card-img-top" alt="maison3"/>
-                <div class="card-body px-0">
-                    <h5 class="card-title">Herlies :</h5>
-                    <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-                        deserunt aperiam praesentium qui eius, aliquam at illum incidunt cupiditate repellat eos
-                        reprehenderit temporibus quibusdam itaque libero fugiat ad? A, illum.</p>
-                </div>
+<!-- Modal "Se connecter" -->
+<div class="modal fade" id="espace" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Se connecter</h5>
+                <h5 class="modal-title ml-auto">
+                    <a class="button-inscription" data-dismiss="modal"
+                       data-toggle="modal"
+                       data-target="#connexion">Inscription</a>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3" id="3">
-                Détails
-            </button>
-
-            <!---------------------- Modal Description ---------------------->
-            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                 aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="louer3">Description du bien</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Prix : 520 000€ <br>
-                                Habitat : maison <br>
-                                Superficie : 200m²
-                            </p>
-
-                            <p>Prestation(s):
-                            <ul>
-                                <li>5 chambres</li>
-                                <li>2 salles de bain</li>
-                                <li>Terrain de 1100m²</li>
-                                <li>Gaz de ville</li>
-                            </ul>
-                            </p>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#recap3">
-                                    Faire une offre
-                                </button>
-                            </div>
-                        </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Mail :</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                               aria-describedby="emailHelp">
                     </div>
-                </div>
-
-                <!---------------------- Modal Offre ------------------------>
-                <div class="modal fade" id="recap3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                     aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="buy3">Proposition d'offre</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-
-                            <div class="modal-body">
-                                <div class="form-group row">
-                                    <div class="col-6">
-                                        <label for="nom">Montant proposé :</label>
-                                        <input type="text" class="form-control notempty" id="montant3" name="prix"
-                                               placeholder="Montant en €">
-                                    </div>
-                                </div>
-
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                    <button type="button" class="btn btn-danger">Envoyer offre</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mot de passe :</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
-                </div>
-            </div>
-        </article>
-    </div>
-</section>
-
-
-<div class="container mb-5">
-    <div class="row mt-3 mb-3">
-        <div class="col-12">
-            <div id="maps3">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Rester connecté(e)</label>
+                    </div>
+                    <p>
+                        <button type="submit" class="btn btn-primary">Valider</button>
+                    </p>
+                </form>
             </div>
         </div>
     </div>
 </div>
+</nav>
+
+<!-------- Produit -------->
+<section class="container mt-5 mb-5">
+    <div class="row mt-3 justify-content-around">
+        <div class="card mb-3 col-lg-6 col-12 col-sm-12 px-sm-0">
+            <img src="../src/img/herlies.jpg" class="card-img-top" alt="maison1">
+            <div class="card-body">
+                <h5 class="card-title">Herlies</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3" id="3">
+                    Description
+                </button>
+
+                <!---------------------- Modal Description ---------------------->
+                <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="louer3">Description du bien</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Prix : 420 000€ <br>
+                                    Habitat : maison <br>
+                                    Superficie : 190m²
+                                </p>
+
+                                <p>Prestation(s):
+                                <ul>
+                                    <li>4 chambres</li>
+                                    <li>2 salles de bain</li>
+                                    <li>Gaz de ville</li>
+                                </ul>
+                                </p>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                                            data-target="#recap3">
+                                        Faire une offre
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---------------------- Modal Offre ------------------------>
+                    <div class="modal fade" id="recap3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="buy3">Proposition d'offre</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="form-group row">
+                                        <div class="col-6">
+                                            <label for="nom">Montant proposé :</label>
+                                            <input type="text" class="form-control notempty" id="montant3" name="prix"
+                                                   placeholder="Montant en €">
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer
+                                        </button>
+                                        <button type="button" class="btn btn-danger">Envoyer offre</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------- Localisation -------->
+        <div class="col-lg-6 col-12 col-sm-12 px-sm-auto">
+            <div id="maps3">
+            </div>
+        </div>
+
+    </div>
+</section>
 
 <!---Footer--->
 <footer class="page-footer font-small blue pt-4 pb-4">
     <div class="container-fluid text-center text-md-left">
         <div class="row">
             <div class="col-md-6 mt-md-0 mt-3">
-                <img src="src/img/logo2.jpg"/>
+                <img src="../src/img/logo2.jpg"/>
                 <p>Here you can use rows and columns to organize your footer content.</p>
             </div>
 
