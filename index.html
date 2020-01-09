@@ -19,7 +19,7 @@
 <body>
 
 <!----Menu--->
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+<nav class="navbar navbar-expand-lg navbar-light">
     <img src="src/img/logo.png" height="70" width="70" alt="logo"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,7 +147,6 @@
                             </div>
                         </div>
 
-
                         <div class="form-group row">
                             <div class="col-12">
                                 <div class="form-check">
@@ -198,7 +197,7 @@
                         <label class="form-check-label" for="exampleCheck1">Rester connecté(e)</label>
                     </div>
                     <p>
-                        <button type="submit" class="btn btn-primary">Valider</button>
+                        <button type="submit" class="btn btn-warning">Valider</button>
                     </p>
                 </form>
             </div>
@@ -267,10 +266,10 @@
     <div>
         <h1 class="text-center mt-5">Nos services</h1>
     </div>
-    <div class="row mt-5 justify-content-around">
+    <div class="row mt-3 justify-content-around">
 
         <!-- Service 1 -->
-        <article class="col-12 col-sm-3 px-sm-0">
+        <article class="col-12 col-sm-3 px-sm-0 mb-3">
             <div class="card border-0">
                 <img src="src/img/commerce.jpg" class="card-img-top" alt="service1"/>
                 <div class="card-body px-0">
@@ -285,7 +284,7 @@
         </article>
 
         <!-- Service 2 -->
-        <article class="col-12 col-sm-3 px-sm-0">
+        <article class="col-12 col-sm-3 px-sm-0 mb-3">
             <div class="card border-0">
                 <img src="src/img/expert.jpg" class="card-img-top" alt="service2"/>
                 <div class="card-body px-0">
@@ -300,7 +299,7 @@
         </article>
 
         <!-- Service 3 -->
-        <article class="col-12 col-sm-3 px-sm-0">
+        <article class="col-12 col-sm-3 px-sm-0 mb-3">
             <div class="card border-0">
                 <img src="src/img/client.jpg" class="card-img-top" alt="service3"/>
                 <div class="card-body px-0">
@@ -313,20 +312,34 @@
                 </div>
             </div>
         </article>
+    </div>
+</section>
 
-        <!-------- Localisation agence -------->
-        <div class="container mb-5">
-            <hr>
-            <div>
-                <h1 class="text-center mt-5" id="title3">Où sommes-nous ? :</h1>
-            </div>
-            <div class="row mt-5 justify-content-around">
-                <div class="col-12">
-                    <div id="mapsa">
-                    </div>
+<div class="container">
+    <hr>
+</div>
+
+<!-------- Localisation agence -------->
+<section class="container mb-5">
+    <div>
+        <h1 class="text-center mt-5">Où sommes-nous ?</h1>
+    </div>
+    <div class="row mt-4 justify-content-around">
+        <article class="col-6 col-sm-5 col-lg-5">
+            <img src="src/img/agence.jpg" class="card-img-top" alt="agence"/>
+            <div class="card border-0">
+                <div class="card-body px-0" id="horaires">
+                    <h5 class="card-title">Horaires et localisation :</h5>
+                    <p class="card-text text-justify">Lundi au vendredi | avec ou sans rendez-vous | de 9h à 19h</p>
                 </div>
             </div>
-        </div>
+        </article>
+
+        <article class="col-6 col-md-6 col-lg-6 col-sm-7">
+            <div id="mapsa">
+            </div>
+        </article>
+    </div>
     </div>
 </section>
 

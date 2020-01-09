@@ -16,7 +16,7 @@
 <body>
 
 <!----Menu--->
-<nav class="navbar navbar-expand-lg navbar-light bg-secondary mb-3">
+<nav class="navbar navbar-expand-lg navbar-light mb-3">
     <img src="../src/img/logo.png" height="70" width="70"/>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,7 +144,6 @@
                             </div>
                         </div>
 
-
                         <div class="form-group row">
                             <div class="col-12">
                                 <div class="form-check">
@@ -195,7 +194,7 @@
                         <label class="form-check-label" for="exampleCheck1">Rester connecté(e)</label>
                     </div>
                     <p>
-                        <button type="submit" class="btn btn-primary">Valider</button>
+                        <button type="submit" class="btn btn-warning">Valider</button>
                     </p>
                 </form>
             </div>
@@ -222,18 +221,18 @@
         </div>
 
         <div class="form-group">
-            <label>Téléphone <i class='uil uil-phone'></i> :</label>
-            <input type="text" class="form-control" id="phone">
-        </div>
-
-        <div class="form-group">
-            <label>Mail <i class='uil uil-envelope'></i> :</label>
-            <input type="text" class="form-control" id="mail">
-        </div>
-
-        <div class="form-group">
             <label>Objet de votre demande demande <i class='uil uil-question-circle'></i> :</label>
             <input type="text" class="form-control" id="demande">
+        </div>
+
+        <div class="form-group">
+            <label>Référence client :</label>
+            <input type="text" class="form-control" id="customer">
+        </div>
+
+        <div class="form-group">
+            <label>Référence dossier :</label>
+            <input type="text" class="form-control" id="dossier">
         </div>
 
         <div class="form-group">
@@ -241,9 +240,9 @@
             <textarea class="form-control" id="message"></textarea>
         </div>
 
-        <p>
-            <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
-        </p>
+        <div class="form-group text-center">
+            <button type="submit" class="btn btn-secondary btn-block" id="send">Envoyer</button>
+        </div>
     </form>
 </div>
 

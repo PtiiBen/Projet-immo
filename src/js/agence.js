@@ -18,6 +18,7 @@ function initMap() { /* Déclaration lat et long*/
 
     let marker = new google.maps.Marker({  /* On attribut un curseur a l'objet Lille qui se trouve dans la map */
         position : Lille,
+        icon: 'src/img/logo2.jpg',
         map : map
     });
 

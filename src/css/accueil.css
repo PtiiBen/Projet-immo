@@ -21,12 +21,24 @@ h1{
     font-size: 13px;
 }
 
+#details{
+    color: black !important;
+    background-color: #FBB569 !important;
+    border-color: #FBB569 !important;
+}
+
+#details:hover {
+    color: #FBB569 !important;
+    background-color: black !important;
+    border-color: black !important;
+}
+
 /*-----------Menu-----------*/
 a.nav-link {
     color: white !important;
 }
 
-.bg-secondary{
+nav{
     background-color: #383D40 !important;
 }
 
@@ -34,15 +46,15 @@ a.nav-link {
     background-color: #FBB569 !important;
 }
 
-.button-inscription{
+nav .button-inscription{
     color: silver !important;
 }
 
-.button-inscription:hover{
+nav .button-inscription:hover{
     cursor: pointer;
 }
 
-.btn-primary{
+nav .btn-primary{
     background-color: #FBB569 !important;
     color: black !important;
     border-color: white !important;
@@ -58,7 +70,7 @@ nav a:hover{
     border-radius: 5px;
 }
 
-.btn-primary.focus, .btn-primary:focus {
+nav .btn-primary.focus, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(255,255,255,1);
 }
 
