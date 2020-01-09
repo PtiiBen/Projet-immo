@@ -1,0 +1,90 @@
+body{
+    font-family: "Trebuchet MS";
+    font-size: 15px;
+}
+
+h1{
+    color: #FBB569 !important;
+    text-decoration: underline;
+}
+
+#title, #title2{
+    text-decoration: underline;
+}
+
+.card-title{
+    color: #FBB569;
+    text-decoration: underline;
+}
+
+.card-text:last-child {
+    font-size: 13px;
+}
+
+/*-----------Menu-----------*/
+a.nav-link {
+    color: white !important;
+}
+
+.bg-secondary{
+    background-color: #383D40 !important;
+}
+
+.navbar-light .navbar-toggler{
+    background-color: #FBB569 !important;
+}
+
+.button-inscription{
+    color: silver !important;
+}
+
+.button-inscription:hover{
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: #FBB569 !important;
+    color: black !important;
+    border-color: white !important;
+}
+
+nav a:hover{
+    color: #FBB569 !important;
+}
+
+.navbar-light .navbar-nav .active{
+    background-color: #FBB569;
+    color: black !important;
+    border-radius: 5px;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,1);
+}
+
+/*-----------Footer-----------*/
+footer{
+    color: white;
+    background-color: #383D40 !important;
+}
+
+footer,a{
+    color: #FBB569 !important;
+}
+
+footer, a:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+footer h5{
+    color: white;
+}
+
+.facebook, .linkedin{
+    font-size: 30px;
+}
+
+/*-----------Modal-----------*/
+
+

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="FR-fr">
+<head>
+    <title>Nor'Immo | Itinéraire Herlies</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
+    <link rel="stylesheet" href="../src/css/maps.css">
+    <link rel="stylesheet" href="../src/css/accueil.css">
+</head>
+
+<body>
+
+<!----Menu--->
+<nav class="navbar navbar-expand-lg navbar-light bg-secondary mb-3">
+    <img src="../src/img/logo.png" height="70" width="70"/>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Produits<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact<span
+                        class="sr-only"></span></a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Model "Inscription" -->
+    <button type="button" class="btn btn-primary col-xs-4" data-dismiss="modal" data-toggle="modal"
+            data-target="#espace">
+        Mon Espace
+    </button>
+    <div class="modal fade" id="connexion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Inscription</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label for="nom">Nom :</label>
+                                <input type="text" class="form-control notempty" id="nom" name="nom" placeholder="Nom">
+                                <small class="form-text text-danger d-none">
+                                    Veuillez saisir un nom.
+                                </small>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="prenom">Prénom :</label>
+                                <input type="text" class="form-control notempty" id="prenom" name="prenom"
+                                       placeholder="Prénom">
+                                <small id="nomhelp" class="form-text text-danger d-none">
+                                    Veuillez saisir un prenom.
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label for="genre">Genre :</label>
+                                <p>
+                                    <select class="form-control" id="genre" name="genre">
+                                        <option value="valeur1">Homme</option>
+                                        <option value="valeur2">Femme</option>
+                                    </select>
+                                </p>
+                            </div>
+
+                            <div class="col-6">
+                                <label for="birth">Date de naissance :</label>
+                                <input type="date" class="form-control" id="birth" name="zip">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="adresse">Adresse :</label>
+                                <input type="text" class="form-control" id="adresse" name="adresse"
+                                       placeholder="Adresse">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label for="zip">CP :</label>
+                                <input type="text" class="form-control" id="zip" name="zip" placeholder="CP">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="ville">Ville :</label>
+                                <input type="text" class="form-control" id="ville" name="ville" placeholder="Ville">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="email">Email :</label>
+                                <input type="email" class="form-control notempty" id="email" name="email"
+                                       placeholder="Email">
+                                <small class="form-text text-danger d-none">
+                                    Veuillez saisir une adresse email valide.
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="password">Mot de passe :</label>
+                                <input type="password" class="form-control notempty" id="password" name="password"
+                                       placeholder="Mot de passe">
+                                <small class="form-text text-danger d-none">
+                                    Veuillez saisir un mot de passe.
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="confirm">Confirmer mot de passe :</label>
+                                <input type="password" class="form-control notempty" id="confirm" name="password"
+                                       placeholder="Confirmer mot de passe">
+                                <small class="form-text text-danger d-none">
+                                    Veuillez re-saisir le mot de passe.
+                                </small>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" id="exampleCheck2" type="checkbox">
+                                    <label class="form-check-label" for="exampleCheck2">J'accepte les conditions
+                                        d'utilisations.</label>
+                                </div>
+                                <button type="button" id="btn1" class="btn btn-primary btn-block">Envoyer</button>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="container mt-5 mb-5">
+    <div class="row mt-3 justify-content-around">
+        <article class="col-12 col-sm-3 px-sm-0">
+            <div class="card border-0">
+                <img src="../src/img/m3.jpg" class="card-img-top" alt="maison3"/>
+                <div class="card-body px-0">
+                    <h5 class="card-title">Herlies :</h5>
+                    <p class="card-text text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                        deserunt aperiam praesentium qui eius, aliquam at illum incidunt cupiditate repellat eos
+                        reprehenderit temporibus quibusdam itaque libero fugiat ad? A, illum.</p>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3" id="3">
+                Détails
+            </button>
+
+            <!---------------------- Modal Description ---------------------->
+            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="louer3">Description du bien</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Prix : 520 000€ <br>
+                                Habitat : maison <br>
+                                Superficie : 200m²
+                            </p>
+
+                            <p>Prestation(s):
+                            <ul>
+                                <li>5 chambres</li>
+                                <li>2 salles de bain</li>
+                                <li>Terrain de 1100m²</li>
+                                <li>Gaz de ville</li>
+                            </ul>
+                            </p>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#recap3">
+                                    Faire une offre
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------------------- Modal Offre ------------------------>
+                <div class="modal fade" id="recap3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="buy3">Proposition d'offre</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="form-group row">
+                                    <div class="col-6">
+                                        <label for="nom">Montant proposé :</label>
+                                        <input type="text" class="form-control notempty" id="montant3" name="prix"
+                                               placeholder="Montant en €">
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-danger">Envoyer offre</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<div class="container mb-5">
+    <div class="row mt-3 mb-3">
+        <div class="col-12">
+            <div id="maps3">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---Footer--->
+<footer class="page-footer font-small blue pt-4 pb-4">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-6 mt-md-0 mt-3">
+                <img src="src/img/logo2.jpg"/>
+                <p>Here you can use rows and columns to organize your footer content.</p>
+            </div>
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Informations</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Nos agences</a>
+                    </li>
+                    <li>
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li>
+                        <a href="#">CGV</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h5 class="text-uppercase">Nous suivres</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a class="facebook" href="#">
+                            <i class='uil uil-facebook'></i>
+                        </a>
+                        <a class="linkedin" href="#"><i class='uil uil-linkedin'></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#"> NOR'IMMO.com</a>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-Q8-xZAvhbFCoWYWh0gv02z36JFqDCVg&callback=initMap">
+</script>
+<script src="../src/js/map.js" defer></script>
+<script src="../src/js/produit3.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
